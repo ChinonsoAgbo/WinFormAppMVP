@@ -1,0 +1,10 @@
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.csproj.AssemblyReference.cache
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.Properties.Resources.resources
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.Views.PetView.resources
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.csproj.GenerateResource.cache
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.csproj.CoreCompileInputs.cache
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\bin\Debug\CrudWinFormMVP.exe.config
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\bin\Debug\CrudWinFormMVP.exe
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\bin\Debug\CrudWinFormMVP.pdb
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.exe
+D:\HourOfCode\..NetAPPS_Tutorial\CrudWinFormMVP\obj\Debug\CrudWinFormMVP.pdb
