@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPagePetList = new System.Windows.Forms.TabPage();
+            this.tabPageDetail = new System.Windows.Forms.TabPage();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.petTypeValue = new System.Windows.Forms.TextBox();
@@ -42,7 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.petIDValue = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPagePetDetail = new System.Windows.Forms.TabPage();
+            this.tabPagePetList = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Delete = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
@@ -52,8 +55,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPageDetail.SuspendLayout();
             this.tabPagePetList.SuspendLayout();
-            this.tabPagePetDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,8 +82,8 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabPageDetail);
             this.tabControl1.Controls.Add(this.tabPagePetList);
-            this.tabControl1.Controls.Add(this.tabPagePetDetail);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 52);
             this.tabControl1.Name = "tabControl1";
@@ -88,25 +91,25 @@
             this.tabControl1.Size = new System.Drawing.Size(800, 398);
             this.tabControl1.TabIndex = 2;
             // 
-            // tabPagePetList
+            // tabPageDetail
             // 
-            this.tabPagePetList.Controls.Add(this.btnCancel);
-            this.tabPagePetList.Controls.Add(this.btnSave);
-            this.tabPagePetList.Controls.Add(this.petTypeValue);
-            this.tabPagePetList.Controls.Add(this.label5);
-            this.tabPagePetList.Controls.Add(this.petColourValue);
-            this.tabPagePetList.Controls.Add(this.label4);
-            this.tabPagePetList.Controls.Add(this.petNameValue);
-            this.tabPagePetList.Controls.Add(this.label3);
-            this.tabPagePetList.Controls.Add(this.petIDValue);
-            this.tabPagePetList.Controls.Add(this.label2);
-            this.tabPagePetList.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePetList.Name = "tabPagePetList";
-            this.tabPagePetList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePetList.Size = new System.Drawing.Size(792, 372);
-            this.tabPagePetList.TabIndex = 0;
-            this.tabPagePetList.Text = "Pet list";
-            this.tabPagePetList.UseVisualStyleBackColor = true;
+            this.tabPageDetail.Controls.Add(this.btnCancel);
+            this.tabPageDetail.Controls.Add(this.btnSave);
+            this.tabPageDetail.Controls.Add(this.petTypeValue);
+            this.tabPageDetail.Controls.Add(this.label5);
+            this.tabPageDetail.Controls.Add(this.petColourValue);
+            this.tabPageDetail.Controls.Add(this.label4);
+            this.tabPageDetail.Controls.Add(this.petNameValue);
+            this.tabPageDetail.Controls.Add(this.label3);
+            this.tabPageDetail.Controls.Add(this.petIDValue);
+            this.tabPageDetail.Controls.Add(this.label2);
+            this.tabPageDetail.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDetail.Name = "tabPageDetail";
+            this.tabPageDetail.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetail.Size = new System.Drawing.Size(792, 372);
+            this.tabPageDetail.TabIndex = 0;
+            this.tabPageDetail.Text = "Pet Detail";
+            this.tabPageDetail.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
@@ -194,22 +197,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Pet ID: ";
             // 
-            // tabPagePetDetail
+            // tabPagePetList
             // 
-            this.tabPagePetDetail.Controls.Add(this.dataGridView1);
-            this.tabPagePetDetail.Controls.Add(this.Delete);
-            this.tabPagePetDetail.Controls.Add(this.editBtn);
-            this.tabPagePetDetail.Controls.Add(this.addNewBtn);
-            this.tabPagePetDetail.Controls.Add(this.searchBtn);
-            this.tabPagePetDetail.Controls.Add(this.searchPetValue);
-            this.tabPagePetDetail.Controls.Add(this.label6);
-            this.tabPagePetDetail.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePetDetail.Name = "tabPagePetDetail";
-            this.tabPagePetDetail.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePetDetail.Size = new System.Drawing.Size(792, 372);
-            this.tabPagePetDetail.TabIndex = 1;
-            this.tabPagePetDetail.Text = "Pet detail";
-            this.tabPagePetDetail.UseVisualStyleBackColor = true;
+            this.tabPagePetList.Controls.Add(this.dataGridView1);
+            this.tabPagePetList.Controls.Add(this.Delete);
+            this.tabPagePetList.Controls.Add(this.editBtn);
+            this.tabPagePetList.Controls.Add(this.addNewBtn);
+            this.tabPagePetList.Controls.Add(this.searchBtn);
+            this.tabPagePetList.Controls.Add(this.searchPetValue);
+            this.tabPagePetList.Controls.Add(this.label6);
+            this.tabPagePetList.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePetList.Name = "tabPagePetList";
+            this.tabPagePetList.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePetList.Size = new System.Drawing.Size(792, 372);
+            this.tabPagePetList.TabIndex = 1;
+            this.tabPagePetList.Text = "Pet List";
+            this.tabPagePetList.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -219,9 +222,33 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(38, 58);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(633, 297);
             this.dataGridView1.TabIndex = 7;
@@ -292,10 +319,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPageDetail.ResumeLayout(false);
+            this.tabPageDetail.PerformLayout();
             this.tabPagePetList.ResumeLayout(false);
             this.tabPagePetList.PerformLayout();
-            this.tabPagePetDetail.ResumeLayout(false);
-            this.tabPagePetDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -306,8 +333,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPageDetail;
         private System.Windows.Forms.TabPage tabPagePetList;
-        private System.Windows.Forms.TabPage tabPagePetDetail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox petIDValue;
         private System.Windows.Forms.TextBox petColourValue;

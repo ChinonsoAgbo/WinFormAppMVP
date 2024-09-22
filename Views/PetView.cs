@@ -21,7 +21,7 @@ namespace CrudWinFormMVP.Views
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
-            tabControl1.TabPages.Remove(tabPagePetDetail);
+          tabControl1.TabPages.Remove(tabPageDetail);
 
         }
 
