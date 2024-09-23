@@ -24,11 +24,12 @@ namespace CrudWinFormMVP
             // connect the view and Repository to PetPresenter 
 
             string sqlConnectionString = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
-            IPetView petView = new PetView();
-            IPetRepository repository = new PetRepository(sqlConnectionString);
-            new PetPresenter(petView,repository);   
+            IMainView view = new MainView();
+            new MainPresenter(view, sqlConnectionString);
 
-            Application.Run((Form)petView); // cast the form to view 
+            IPetRepository repository = new PetRepository(sqlConnectionString);
+              
+            Application.Run((Form)view); // cast the form to view 
         }
     }
 }

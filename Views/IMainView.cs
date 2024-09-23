@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace CrudWinFormMVP.Views
 {
-    internal interface IMainView
+    public interface IMainView
     {
         event EventHandler ShowPetView;
-       // event EventHandler ShowPetView;
+        event EventHandler ShowOwnerView;
+        event EventHandler ShowVetsView;
+
+        // event EventHandler ShowPetView;
     }
 }

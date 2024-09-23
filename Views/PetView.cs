@@ -22,6 +22,7 @@ namespace CrudWinFormMVP.Views
             InitializeComponent();
             AssociateAndRaiseViewEvents();
           tabControl1.TabPages.Remove(tabPageDetail);
+            btnPetClose.Click += delegate { this.Close(); };
 
         }
 
@@ -91,5 +92,31 @@ namespace CrudWinFormMVP.Views
         {
             dataGridView1.DataSource = petList;
         }
+
+
+        // Singleton pattern open a single form instance 
+        private static PetView instance;
+        public static PetView GetInstance(Form parentContainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PetView();
+                instance.MdiParent = parentContainer;
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+
+            }
+
+            else
+            {
+                if(instance.WindowState == FormWindowState.Minimized)
+                    instance.WindowState = FormWindowState.Normal;
+                instance.BringToFront();
+            }
+
+            return instance;
+        }
+
+
     }
 }
